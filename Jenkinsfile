@@ -29,7 +29,7 @@ pipeline {
    }
     stage('Remove Unused docker image') {
       steps{
-        sh "darshhd/python-hello-world:latest"
+        sh "darshhd/python-hello-world"
       }
     }
   }
