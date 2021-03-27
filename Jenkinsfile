@@ -32,6 +32,11 @@ pipeline {
         sh "docker rmi darshhd/python-hello-world"
       }
     }
+    stage('Pulling from dockerhub') {
+      steps{
+        sh "docker pull darshhd/python-hello-world"
+      }
+    }
   }
 }
 
